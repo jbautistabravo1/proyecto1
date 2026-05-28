@@ -1,32 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi sitio - Contacto</title>
+    <title>Juan Bravo — Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
+
+    <!-- HEADER -->
+
     <header>
-        <h1> Primer sitio </h1>
+
+        <div class="marca">
+            Juan Bravo
+            <span>Sales Engineer — Technical Pre-Sales & Solution Design</span>
+        </div>
+
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="intereses.html">Intereses</a></li>
-                <li>Contacto</li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a class="activo" href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
+
     </header>
+
+    <!-- MAIN -->
+
     <main>
-        <h2>
-            Contacto
-        </h2>
-        <a href="mailto:juanbravo@uade.edu.ar">juanbravo@uade.edu.ar</a>
+
+        <section>
+
+            <h2>Contacto</h2>
+
+            <p>
+                Si querés contactarme por temas profesionales, proyectos
+                o consultas, podés escribirme directamente a mi correo,
+                llamarme o usar el formulario.
+            </p>
+
+            <div class="tarjetas">
+
+                <div class="tarjeta">
+                    <h3>Correo</h3>
+                    <p><a href="mailto:juanbravoo75@icloud.com">juanbravoo75@icloud.com</a></p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Teléfono</h3>
+                    <p><a href="tel:+541133081525">+54 11 3308-1525</a></p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Ubicación</h3>
+                    <p>CABA, Buenos Aires, Argentina</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <h2>Formulario</h2>
+
+            <form action="mailto:juanbravoo75@icloud.com" method="post" enctype="text/plain">
+
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="asunto">Asunto</label>
+                <input type="text" id="asunto" name="asunto">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <button type="submit">Enviar</button>
+
+            </form>
+
+        </section>
+
     </main>
+
+    <!-- FOOTER -->
+
     <footer>
-        <p> Powered by JB </p>
+        <p>Sitio personal de Juan Bravo — UADE © 2026.</p>
     </footer>
+
 </body>
 
 </html>
